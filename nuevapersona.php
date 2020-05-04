@@ -20,12 +20,7 @@ $resultado = $sentencia->execute([$descripcionConvocatoria, $fechaInicio, $fecha
 #Con eso podemos evaluar
 
 if($resultado === TRUE) {
-    echo '<script type="text/javascript">';
-    echo 'setTimeout(function () {';
-    echo 'swal("Correcto!","Convocatoria Registrada","success").then( function(val) {';
-    echo 'if (val == true) window.location.href = \'index.php\';';
-    echo '});';
-    echo '}, 200);  </script>';
+    header("Location: index.php"))
 
 
     }else echo "Algo salió mal. Por favor verifica que la tabla exista";
@@ -33,6 +28,4 @@ if($resultado === TRUE) {
 
 ?>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
-   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.js"></script>
+<
