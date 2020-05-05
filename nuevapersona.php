@@ -20,7 +20,7 @@ $resultado = $sentencia->execute([$descripcionConvocatoria, $fechaInicio, $fecha
 #Con eso podemos evaluar
 
 if($resultado === TRUE) {
-    header("Location: index.php"))
+     echo "<script>alert('Registro Correcto'); window.location = './index.php';</script>";
 
 
     }else echo "Algo salió mal. Por favor verifica que la tabla exista";
